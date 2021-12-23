@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey Form</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+  <h1>Survey Form</h1>
+ </header>
+ <main>
+   <form action="">
+    <!-- Personal Information for form Section -->
+    <section id="pii-section">
+     <h2>Personal Information</h2>
+     <ul id="pii-questions">
+      <li class="pii-content">
+       <label for="username">Username</label>
+       <input type="text" name="username" id="username" required>
+      </li>
+      <li class="pii-content">
+       <label for="email">E-mail Address</label>
+       <input type="text" name="email" id="email" required>
+      </li>
+      <li class="pii-content">
+       <label for="age">Age</label>
+       <input type="number" name="age" id="age" min="13" required>
+      </li>
+      <li class="pii-content">
+       <label for="birthdate">Birthday</label>
+       <input type="date" name="birthdate" id="birthdate" required>
+      </li>
+      <li class="pii-content">
+       <label for="phone">Phone Number</label>
+       <input type="tel" name="phone" id="phone" required>
+      </li>
+     </ul>
+    </section>
+
+    <!-- More Information Section for form -->
+    <section id="more-info">
+     <h2>More Information</h2>
+     <ul id="more-info-content">
+      <h3>What is your favorite coding language?</h3>
+      <li class="more-content">
+       <input type="checkbox" name="language" id="html">
+       <label for="html">HTML</label>
+      </li>
+      <li class="more-content">
+       <input type="checkbox" name="language" id="css">
+       <label for="css">CSS</label>
+      </li>
+      <li class="more-content">
+       <input type="checkbox" name="language" id="rust">
+       <label for="rust">Rust</label>
+      </li>
+      <li class="more-content">
+       <input type="checkbox" name="language" id="python">
+       <label for="python">Python</label>
+      </li>
+      <li class="more-content">
+       <input type="checkbox" name="language" id="node-js">
+       <label for="node-js">Node.js</label>
+      </li>
+     </ul>
+    </section>
+    <!-- Question 2 -->
+    <section id="more-info">
+     <h3>What is your level of experiences?</h3>
+     <ul id="more-info-content">
+      <li class="more-content">
+       <input type="radio" name="level" id="beginner">
+       <label for="beginner">Beginner</label>
+      </li>
+      <li class="more-content">
+       <input type="radio" name="level" id="novice">
+       <label for="novice">Novice</label>
+      </li>
+      <li class="more-content">
+       <input type="radio" name="level" id="intermediate">
+       <label for="intermediate">Intermediate</label>
+      </li>
+      <li class="more-content">
+       <input type="radio" name="level" id="expert">
+       <label for="expert">Expert</label>
+      </li>
+     </ul>
+    </section id="more-info">
+<!-- Question 3 -->
+    <section id="more-info">
+     <h3>How many years have your been a developer?</h3>
+     <ul id="more-info-content">
+       <select name="years" id="years">
+        <option value="zero-one">0 - 1 Years</option>
+        <option value="one-three">1 - 3 Years</option>
+        <option value="zero-one">3 - 5 Years</option>
+        <option value="zero-one">5 + Years</option>
+       </select>
+     </ul>
+    </section>
+<!-- Question 4 -->
+    <section id="more-info">
+     <h3>What is your next coding language to learn?</h3>
+     <textarea name="" id="" cols="30" rows="10"></textarea>
+    </section>
+ <!-- Contact Me How Section -->
+    <section id="contact-me">
+     <h2>How should we contact you?</h2>
+     <ul>
+      <li class="more-content">
+       <input type="radio" name="contact" id="phone">
+       <label for="phone">Call Me</label>
+      </li>
+      <li class="more-content">
+       <input type="radio" name="contact" id="text">
+       <label for="text">Text Me</label>
+      </li>
+      <li class="more-content">
+       <input type="radio" name="contact" id="email">
+       <label for="email">Email Me</label>
+      </li>
+      <li class="more-content">
+       <input type="radio" name="contact" id="no-contact">
+       <label for="no-contact">Do Not Me</label>
+      </li>
+     </ul>
+    </section>
+
+    <!-- Terms of Agreement and Buttons -->
+    <section id="checkbox" class="more-content">
+     <input type="checkbox" name="terms" id="terms" required>
+     <label for="terms">Agree to Terms</label>
+    </section>
+    <!-- Button -->
+    <section id="buttons">
+      <button type="reset" id="btn" class="btn-reset" >Clear</button>
+      <button id="btn" class="btn-submit">Submit</button>
+    </section>
+   </form>
+ </main>
+ 
+</body>
+</html>
